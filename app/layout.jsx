@@ -1,5 +1,6 @@
-import Link from "next/link";
 import { Fraunces, Manrope } from "next/font/google";
+import Link from "next/link";
+import SiteHeader from "./components/SiteHeader";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -22,14 +23,11 @@ export const metadata = {
     "A personal site about caring, curiosity, and helping where it matters.",
 };
 
-const navItems = [
-  ["about", "/alias"],
-  ["why", "/why"],
-  ["inspirations", "/inspirations"],
-  ["reframes", "/reframes"],
-  ["spirituality", "/spirituality"],
-  ["recommendations", "/recommendations"],
-];
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
 
 const runners = ["🏃", "🏃‍♀️", "🏃", "🏃‍♂️", "🏃‍♀️", "🏃", "🏃‍♂️", "🏃‍♀️", "🏃", "🏃‍♂️", "🏃‍♀️", "🏃"];
 
@@ -37,18 +35,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${manrope.variable} ${fraunces.variable}`}>
       <body>
-        <header className="site-header">
-          <Link className="wordmark" href="/" aria-label="catalyst, home">
-            catalyst
-          </Link>
-          <nav aria-label="Main navigation">
-            {navItems.map(([label, href]) => (
-              <Link href={href} key={href}>
-                {label}
-              </Link>
-            ))}
-          </nav>
-        </header>
+        <SiteHeader />
 
         {children}
 

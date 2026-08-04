@@ -13,7 +13,7 @@ const FLASH_COLORS = [
 const BLOG_URL =
   "https://medium.com/@jacobshilling/embracing-lifes-opportunities-a-journey-of-purpose-and-connection-ef1cf4233bc3";
 
-function FlashTile({ label, sublabel, style = {} }) {
+function FlashTile({ label, sublabel, className = "", style = {} }) {
   const [scheme, setScheme] = useState(FLASH_COLORS[0]);
 
   useEffect(() => {
@@ -31,7 +31,7 @@ function FlashTile({ label, sublabel, style = {} }) {
 
   return (
     <div
-      className="flash-tile"
+      className={`flash-tile ${className}`.trim()}
       style={{ background: scheme.bg, color: scheme.color, ...style }}
     >
       {sublabel && <small style={{ color: scheme.color, opacity: 0.6 }}>{sublabel}</small>}
@@ -55,7 +55,6 @@ export default function Home() {
         target="_blank"
         rel="noreferrer"
         className="tile home-blog"
-        style={{ gridColumn: "span 8" }}
       >
         <small>writing</small>
         <strong>Embracing Life&apos;s Opportunities</strong>
@@ -93,7 +92,7 @@ export default function Home() {
         </p>
       </div>
 
-      <FlashTile sublabel="a reminder" label="You are enough." style={{ gridColumn: "span 3" }} />
+      <FlashTile sublabel="a reminder" label="You are enough." className="home-flash" />
 
       <Link href="/why" className="tile home-why">
         <small>why</small>
