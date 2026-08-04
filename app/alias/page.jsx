@@ -1,17 +1,18 @@
 export const metadata = {
-  title: "About — catalyst",
-  description: "Why catalyst? Who I am, what I've done, and where I'm heading.",
+  title: "About — Jacob (catalyst)",
+  description: "I'm Jacob. Why catalyst? Who I am, what I've done, and where I'm heading.",
 };
 
 export default function AliasPage() {
   return (
     <main className="page-shell">
       <p className="eyebrow">About</p>
-      <h1 className="display-title">Why catalyst?</h1>
+      <h1 className="display-title">Hi, I&apos;m Jacob.</h1>
       <p className="lede">
-        Catalyst comes from wanting to be the change — the spark that helps things
-        shift, not just the person who watches and waits. It represents something I
-        believe: that one person, listening properly, can make a real difference.
+        Online — and at work — I go by <strong>catalyst</strong>. That name comes from
+        wanting to be the change: the spark that helps things shift, not just the person
+        who watches and waits. It represents something I believe: that one person,
+        listening properly, can make a real difference.
       </p>
 
       <section className="content-grid">
@@ -20,7 +21,7 @@ export default function AliasPage() {
           <p className="kicker">Who I am</p>
           <h2>The human part.</h2>
           <p>
-            I believe empathy unlocks potential. I care about connection — with people,
+            I&apos;m Jacob. I believe empathy unlocks potential. I care about connection — with people,
             animals, nature, and ordinary moments in a day. I try to live simply and
             gently, with patience for myself and others, even when I don&apos;t always manage it.
           </p>
