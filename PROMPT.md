@@ -1,8 +1,10 @@
-# Website Build Prompt
+# Website Build Prompts
 
-_The original prompt used to build this site._
+_All prompts used to build and refine this site. Kept for future reference._
 
 ---
+
+# Prompt 1 — Original build brief
 
 ## Rules / Setup
 
@@ -264,3 +266,116 @@ My weaknesses turned into positives.
 ## Other webpage details
 
 Runners running in a line at the bottom of all pages. With the strapline: **Physical potential — see what this is!!!**
+
+---
+
+# Prompt 2 — Simplify, reduce colour, archive pages
+
+- overall, make the text minimalist and less cliche. If there's no need for some text, don't include it. And don't add much to what I wrote myself originally. You don't have to include everything I included as an input. Want to make sure things flow too. Make it more english/british style and culture writing as opposed to American.
+- remove the funny page (keep the code in case it is used in future)
+- reduce the number of colours used.
+- remove the empathy and honesty values and their text from the homepage. as well as the "who I am / wer ich bin" "A cheerful, kind‑hearted and sensitive individual." box
+- otherwise, make the homepage more simple and less cluttered.
+- remove the gallery page for now (keep the code in case it is used in future)
+- remove the experience page for now as this is covered in the Why page.
+- make sure no duplication of points across pages.
+- remove this from the inspirations page:
+  - Inspiration in practice
+  - GT and volunteering keep ideas accountable.
+  - A quote can open a door; real interaction asks whether I walk through it. The GT years and the Samaritans shifts are places where attention, humour, listening, and care stopped being admirable words and became things to practise. That's the test of any inspiration: does it change what you do on Tuesday morning?
+
+---
+
+# Prompt 3 — Palette, copy cuts, Medium recommendations
+
+- make the colours minimalist. White or off-white background (#FFFFFF), charcoal text (#222222), and a bright blue or soft coral accent (#3B82F6) for a timeless, professional portfolio look.
+- Use this colour ratio 60-30-10. a neutral dominant color (60%), a secondary tone for text or structure (30%), and a bold accent color for links and buttons (10%).
+- remove this text on the "why" page: I notice who needs help, who reaches out, and where one useful idea could help lots of people at once. The cause — AI, climate, poverty, animal welfare — matters less than the direction. The direction is: take care of each other.
+- They're part of how I stay present, regulated, and useful. The runners at the bottom of every page are a reminder. — change to use this text at the bottom of the "why" page
+- Holly's grandad quote: "Life is all about helping people" He went on to describe the situation of people living in poverty/ with disease in poorer countries.
+- Remove cliches like: "That's not a gap — it's a lens." on the reframes page
+- Remove this on the reframes page:
+  - Sensitivity
+  - Thin-skinned is another way of saying responsive.
+  - When something lands hard, it's because I let it in. That responsiveness is the same quality that makes me good at listening. You can't have one without the other.
+- remove the future home tab and appreciation tabs
+- Use this article I wrote: https://medium.com/@jacobshilling/things-i-recommend-you-buy-and-use-jacob-edition-60d12a4a22ad to populate the recommendations I have on the recommendations page
+
+---
+
+# Prompt 4 — Medium blog on homepage; move quotes to inspirations
+
+https://medium.com/@jacobshilling/embracing-lifes-opportunities-a-journey-of-purpose-and-connection-ef1cf4233bc3
+
+Use and reference this blog I wrote on the front page. and move other quotes to the inspirations page that are on the homepage.
+
+---
+
+# Prompt 5 — Navy instead of black
+
+use navy blue instead of black colour
+
+---
+
+# Prompt 6 — Medium link on every page
+
+add link to my medium near the bottom of each page: https://medium.com/@jacobshilling
+
+---
+
+# Prompt 7 — Separate Medium link from runners / physical potential
+
+make it distinct from the runners at the bottom though and the Physical potential line. These are two separate things
+
+---
+
+# Prompt 8 — Softer logo; orange accent
+
+make the catalyst logo slightly less corporate. make the 3rd colour orange rather than light blue
+
+---
+
+# Prompt 9 — GitHub Pages / index.html note
+
+GitHub Pages requires your main homepage file to be named index.html (all lowercase) and placed directly in the outermost root folder of your project.
+
+_(Context: static export + Actions deploy; built site root is `out/index.html`, not repo source root.)_
+
+---
+
+# Prompt 10 — Next.js static export on main
+
+Please help me configure this Next.js project so it can be successfully hosted on GitHub Pages using GitHub Actions.
+
+1. Locate my `next.config.js` or `next.config.mjs` file.
+2. Update it to include `output: 'export'` and set `images: { unoptimized: true }` so it generates a static build.
+3. Once the file is updated, open the terminal and run a git command to add, commit, and push these configuration changes up to my remote GitHub main branch.
+
+---
+
+# Prompt 11 — Jacob on the about page
+
+add my name - Jacob to the about page
+
+---
+
+# Prompt 12 — Official Next.js GitHub Actions workflow
+
+Since GitHub didn't auto-detect Next.js, please create a standard GitHub Actions deployment workflow for me.
+
+1. Create a folder named `.github` in my root directory, and a subfolder inside it named `workflows`.
+2. Inside `.github/workflows/`, create a new file named `nextjs.yml`.
+3. Populate `nextjs.yml` with the official GitHub Pages deployment configuration for a static Next.js export.
+4. Automatically commit and push this new file to my remote GitHub main branch.
+
+---
+
+# Prompt 13 — Mobile compatible
+
+make the webpages mobile compatible too
+
+---
+
+# Prompt 14 — This file
+
+add all prompts to the prompt.md
