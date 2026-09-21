@@ -44,7 +44,7 @@ function FlashTile({ label, sublabel, className = "", style = {} }) {
 export default function Home() {
   return (
     <>
-    <section id="about" className="page-shell home-about">
+    <section className="page-shell home-about">
       <AboutContent />
     </section>
 

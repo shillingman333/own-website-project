@@ -6,13 +6,13 @@ _The original prompt used to build this site._
 
 ## Change log
 
-### 2026-09-21 — Remove separate about page
+### 2026-09-21 — Remove about page and nav link
 
-**Request:** Don't need the about as a separate page now that it lives on the homepage.
+**Request:** Don't need a separate about page; the homepage is the way to get the about info.
 
 **Changes:**
 - Removed `/alias` route; about content is homepage-only.
-- Nav "about" still links to `/#about` on the homepage.
+- Removed "about" from the site navigation.
 
 ### 2026-09-21 — About on homepage; remove footer strapline
 
@@ -21,7 +21,7 @@ _The original prompt used to build this site._
 **Changes:**
 - About content now appears at the top of the homepage, above the tile grid.
 - Footer strapline removed; runner animation kept.
-- Nav "about" link scrolls to `/#about`.
+- About is on the homepage only (no separate page or nav link).
 
 ### 2026-09-21 — Use name instead of work alias
 
