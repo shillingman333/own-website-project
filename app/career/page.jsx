@@ -12,8 +12,8 @@ export default function CareerPage() {
       <h1 className="display-title">Where I am in my career.</h1>
       <p className="lede">
         Several years in data and analytics consulting taught me how to build properly
-        and communicate clearly. What I want next is work that rewards patience,
-        listening, and care.
+        and communicate clearly. What I want next is work that is people-centric, or
+        that does good for the world.
       </p>
 
       <PodcastPlayer />

@@ -6,6 +6,10 @@ _The original prompt used to build this site._
 
 ## Change log
 
+### 2026-09-21 — Career page intro
+
+**Request:** Word the career page top as: several years in data and analytics consulting taught me how to build properly and communicate clearly; what I want next is work that is people-centric, or does good for the world.
+
 ### 2026-09-21 — Who I am page intro
 
 **Request:** Start the Who I am page by saying this is a collection of thoughts and ideas I have regarding who I wish to be.
