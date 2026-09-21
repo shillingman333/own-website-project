@@ -6,6 +6,15 @@ _The original prompt used to build this site._
 
 ## Change log
 
+### 2026-09-21 — About on homepage; remove footer strapline
+
+**Request:** Remove "Physical potential — see what this is!" from the bottom of each page. Put the about me section on the homepage.
+
+**Changes:**
+- About content now appears on the homepage below the tile grid.
+- Footer strapline removed; runner animation kept.
+- Nav "about" link scrolls to `/#about`.
+
 ### 2026-09-21 — Use name instead of work alias
 
 **Request:** Remove the use of "catalyst" across the site and use my name (Jacob) instead.
