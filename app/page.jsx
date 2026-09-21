@@ -44,10 +44,9 @@ export default function Home() {
   return (
     <main className="home-grid">
 
-      <Link href="/alias" className="tile home-catalyst">
-        <small>work alias</small>
-        <div className="alias-name">catalyst</div>
-        <div className="alias-sub">be the change →</div>
+      <Link href="/alias" className="tile home-name">
+        <div className="display-name">Jacob</div>
+        <div className="name-sub">about me →</div>
       </Link>
 
       <a
@@ -111,7 +110,7 @@ export default function Home() {
 
       <Link href="/alias" className="tile home-alias-link">
         <small>about</small>
-        <strong>Who is catalyst?</strong>
+        <strong>About me</strong>
       </Link>
 
     </main>

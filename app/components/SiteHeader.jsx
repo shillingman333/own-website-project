@@ -18,8 +18,8 @@ export default function SiteHeader() {
   return (
     <header className="site-header">
       <div className="site-header-bar">
-        <Link className="wordmark" href="/" aria-label="catalyst, home" onClick={() => setOpen(false)}>
-          catalyst
+        <Link className="wordmark" href="/" aria-label="Jacob, home" onClick={() => setOpen(false)}>
+          Jacob
         </Link>
         <button
           type="button"

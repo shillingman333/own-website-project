@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "About — Jacob (catalyst)",
-  description: "I'm Jacob. Why catalyst? Who I am, what I've done, and where I'm heading.",
+  title: "About — Jacob",
+  description: "I'm Jacob. Who I am, what I've done, and where I'm heading.",
 };
 
 export default function AliasPage() {
@@ -9,10 +9,9 @@ export default function AliasPage() {
       <p className="eyebrow">About</p>
       <h1 className="display-title">Hi, I&apos;m Jacob.</h1>
       <p className="lede">
-        Online — and at work — I go by <strong>catalyst</strong>. That name comes from
-        wanting to be the change: the spark that helps things shift, not just the person
-        who watches and waits. It represents something I believe: that one person,
-        listening properly, can make a real difference.
+        I&apos;m Jacob. I believe that one person, listening properly, can make a real
+        difference — the spark that helps things shift, not just the person who watches
+        and waits.
       </p>
 
       <section className="content-grid">

@@ -4,6 +4,19 @@ _The original prompt used to build this site._
 
 ---
 
+## Change log
+
+### 2026-09-21 — Use name instead of work alias
+
+**Request:** Remove the use of "catalyst" across the site and use my name (Jacob) instead.
+
+**Changes:**
+- Homepage name tile, site header wordmark, and page titles now say **Jacob** rather than catalyst.
+- About page no longer explains the catalyst alias; it leads with who I am as Jacob.
+- Original alias/catalyst wording preserved below for history.
+
+---
+
 ## Rules / Setup
 
 - Use JavaScript to build the pages
@@ -16,7 +29,7 @@ _The original prompt used to build this site._
 
 Multicoloured rounded squares that flash and swap around. And some squares that are static and have links behind them to other pages or to text at least that explains more.
 
-A box with my work alias which is **"catalyst"** clearly displayed in reasonably large letters.
+A box with my name **"Jacob"** clearly displayed in reasonably large letters. _(Previously: work alias "catalyst".)_
 
 **2 key values to live by: Empathy and Honesty!!**
 
@@ -42,9 +55,9 @@ Make this a big-ish button and link this to the alias.
 
 ---
 
-## Alias page — explaining my alias
+## About page _(formerly alias page)_
 
-Catalyst comes from the fact that I want to be the catalyst in terms of "be the change". And so it feels like a good alias to have. It represents who I am.
+Introduce me as Jacob. _(Previously: alias page explaining "catalyst" — the name came from wanting to be the catalyst in terms of "be the change".)_
 
 ### Who I am
 

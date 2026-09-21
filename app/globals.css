@@ -210,7 +210,7 @@ img, video, svg {
 }
 
 /* Named tiles */
-.home-catalyst {
+.home-name {
   grid-column: span 4;
   grid-row: span 2;
   background: var(--text);
@@ -218,9 +218,9 @@ img, video, svg {
   color: #fff;
 }
 
-.home-catalyst small { color: rgba(255,255,255,0.5); }
+.home-name small { color: rgba(255,255,255,0.5); }
 
-.home-catalyst .alias-name {
+.home-name .display-name {
   font-family: var(--font-display), Georgia, "Times New Roman", serif;
   font-size: clamp(2.6rem, 4.5vw, 3.4rem);
   font-weight: 500;
@@ -230,7 +230,7 @@ img, video, svg {
   color: var(--accent);
 }
 
-.home-catalyst .alias-sub {
+.home-name .name-sub {
   font-size: 0.8rem;
   color: rgba(255,255,255,0.45);
   margin-top: 0.35rem;
@@ -794,7 +794,7 @@ img, video, svg {
     padding: 10px;
   }
 
-  .home-catalyst {
+  .home-name {
     grid-column: span 6;
     grid-row: span 1;
     min-height: 140px;
@@ -866,7 +866,7 @@ img, video, svg {
     padding: 8px;
   }
 
-  .home-catalyst,
+  .home-name,
   .mantra,
   .home-blog,
   .home-amazing,
@@ -882,11 +882,11 @@ img, video, svg {
     min-height: 0;
   }
 
-  .home-catalyst {
+  .home-name {
     padding: 1.35rem 1.2rem;
   }
 
-  .home-catalyst .alias-name {
+  .home-name .display-name {
     font-size: clamp(2.2rem, 12vw, 2.8rem);
   }
 
