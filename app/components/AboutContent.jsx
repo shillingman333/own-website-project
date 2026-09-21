@@ -1,25 +1,22 @@
-export const metadata = {
-  title: "About — Jacob (catalyst)",
-  description: "I'm Jacob. Why catalyst? Who I am, what I've done, and where I'm heading.",
-};
-
-export default function AliasPage() {
+export default function AboutContent({ showHeader = true }) {
   return (
-    <main className="page-shell">
-      <p className="eyebrow">About</p>
-      <h1 className="display-title">Hi, I&apos;m Jacob.</h1>
-      <p className="lede">
-        Online — and at work — I go by <strong>catalyst</strong>. That name comes from
-        wanting to be the change: the spark that helps things shift, not just the person
-        who watches and waits. It represents something I believe: that one person,
-        listening properly, can make a real difference.
-      </p>
+    <>
+      {showHeader && (
+        <>
+          <p className="eyebrow">About</p>
+          <h2 className="display-title">Hi, I&apos;m Jacob.</h2>
+          <p className="lede">
+            I&apos;m Jacob. I believe that one person, listening properly, can make a real
+            difference — the spark that helps things shift, not just the person who watches
+            and waits.
+          </p>
+        </>
+      )}
 
       <section className="content-grid">
-
         <article className="card span-12">
           <p className="kicker">Who I am</p>
-          <h2>The human part.</h2>
+          <h3>The human part.</h3>
           <p>
             I&apos;m Jacob. I believe empathy unlocks potential. I care about connection — with people,
             animals, nature, and ordinary moments in a day. I try to live simply and
@@ -37,7 +34,7 @@ export default function AliasPage() {
 
         <article className="card span-7 bg-soft">
           <p className="kicker">Consulting & analytics</p>
-          <h2>Seven years at Gain Theory.</h2>
+          <h3>Seven years at Gain Theory.</h3>
           <p>
             Building data pipelines, automating processes, and creating systems for
             marketing effectiveness work — getting the infrastructure right so the real
@@ -51,7 +48,7 @@ export default function AliasPage() {
 
         <article className="card span-5">
           <p className="kicker">Supporting people</p>
-          <h2>Samaritans & mental health ally.</h2>
+          <h3>Samaritans & mental health ally.</h3>
           <p>
             Volunteering with Samaritans and acting as a mental health ally at work —
             listening without judgement. Some of the most meaningful work I&apos;ve done.
@@ -60,7 +57,7 @@ export default function AliasPage() {
 
         <article className="card span-12 bg-soft">
           <p className="kicker">What I&apos;m moving toward</p>
-          <h2>Holding the question openly.</h2>
+          <h3>Holding the question openly.</h3>
           <p>
             After years of work that rewarded precision and speed, I want work that
             rewards patience, listening, and care. Training as a Psychological Wellbeing
@@ -73,8 +70,7 @@ export default function AliasPage() {
             experience sitting with people in distress.
           </p>
         </article>
-
       </section>
-    </main>
+    </>
   );
 }

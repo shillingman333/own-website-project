@@ -210,7 +210,7 @@ img, video, svg {
 }
 
 /* Named tiles */
-.home-catalyst {
+.home-name {
   grid-column: span 4;
   grid-row: span 2;
   background: var(--text);
@@ -218,9 +218,9 @@ img, video, svg {
   color: #fff;
 }
 
-.home-catalyst small { color: rgba(255,255,255,0.5); }
+.home-name small { color: rgba(255,255,255,0.5); }
 
-.home-catalyst .alias-name {
+.home-name .display-name {
   font-family: var(--font-display), Georgia, "Times New Roman", serif;
   font-size: clamp(2.6rem, 4.5vw, 3.4rem);
   font-weight: 500;
@@ -230,7 +230,7 @@ img, video, svg {
   color: var(--accent);
 }
 
-.home-catalyst .alias-sub {
+.home-name .name-sub {
   font-size: 0.8rem;
   color: rgba(255,255,255,0.45);
   margin-top: 0.35rem;
@@ -389,7 +389,7 @@ img, video, svg {
 }
 
 /* Page link tiles — mostly white, accent sparingly */
-.home-why, .home-inspiration, .home-reframes, .home-alias-link,
+.home-why, .home-inspiration, .home-reframes,
 .home-flash {
   grid-column: span 3;
   background: var(--bg);
@@ -398,7 +398,6 @@ img, video, svg {
 .home-why { border-left: 3px solid var(--accent); }
 .home-inspiration { border-left: 3px solid var(--accent); }
 .home-reframes { border-left: 3px solid var(--accent); }
-.home-alias-link { border-left: 3px solid var(--accent); }
 
 .home-flash {
   border: 1px solid var(--border);
@@ -415,6 +414,12 @@ img, video, svg {
 @keyframes runnerMove {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
+}
+
+.home-about {
+  scroll-margin-top: 5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 2.5rem;
 }
 
 /* ── Inner pages ── */
@@ -664,27 +669,15 @@ img, video, svg {
   color: #fff;
 }
 
-/* Runner band — physical potential only */
+/* Runner band */
 .runner-footer {
   background: var(--text);
   padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
   overflow: hidden;
 }
-
-.runner-strapline {
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--accent);
-  text-align: center;
-}
-
-.runner-strapline span { opacity: 0.55; }
 
 .runner-track {
   display: flex;
@@ -794,7 +787,7 @@ img, video, svg {
     padding: 10px;
   }
 
-  .home-catalyst {
+  .home-name {
     grid-column: span 6;
     grid-row: span 1;
     min-height: 140px;
@@ -815,7 +808,7 @@ img, video, svg {
     grid-column: span 4;
     grid-row: span 1;
   }
-  .home-why, .home-inspiration, .home-reframes, .home-alias-link,
+  .home-why, .home-inspiration, .home-reframes,
   .home-flash, .flash-tile {
     grid-column: span 3;
     min-height: 110px;
@@ -866,7 +859,7 @@ img, video, svg {
     padding: 8px;
   }
 
-  .home-catalyst,
+  .home-name,
   .mantra,
   .home-blog,
   .home-amazing,
@@ -874,7 +867,6 @@ img, video, svg {
   .home-why,
   .home-inspiration,
   .home-reframes,
-  .home-alias-link,
   .home-flash,
   .flash-tile {
     grid-column: 1 / -1;
@@ -882,11 +874,11 @@ img, video, svg {
     min-height: 0;
   }
 
-  .home-catalyst {
+  .home-name {
     padding: 1.35rem 1.2rem;
   }
 
-  .home-catalyst .alias-name {
+  .home-name .display-name {
     font-size: clamp(2.2rem, 12vw, 2.8rem);
   }
 
@@ -973,12 +965,6 @@ img, video, svg {
 
   .runner-footer {
     padding: 0.9rem 0.85rem 1rem;
-  }
-
-  .runner-strapline {
-    font-size: 0.68rem;
-    line-height: 1.4;
-    padding: 0 0.25rem;
   }
 }
 

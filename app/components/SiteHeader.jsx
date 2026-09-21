@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useState } from "react";
 
 const navItems = [
-  ["about", "/alias"],
   ["why", "/why"],
   ["inspirations", "/inspirations"],
   ["reframes", "/reframes"],
@@ -18,8 +17,8 @@ export default function SiteHeader() {
   return (
     <header className="site-header">
       <div className="site-header-bar">
-        <Link className="wordmark" href="/" aria-label="catalyst, home" onClick={() => setOpen(false)}>
-          catalyst
+        <Link className="wordmark" href="/" aria-label="Jacob, home" onClick={() => setOpen(false)}>
+          Jacob
         </Link>
         <button
           type="button"

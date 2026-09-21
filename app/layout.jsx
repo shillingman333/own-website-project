@@ -1,5 +1,4 @@
 import { Fraunces, Manrope } from "next/font/google";
-import Link from "next/link";
 import SiteHeader from "./components/SiteHeader";
 import "./globals.css";
 
@@ -16,8 +15,8 @@ const fraunces = Fraunces({
 
 export const metadata = {
   title: {
-    default: "catalyst — a work in progress",
-    template: "%s — catalyst",
+    default: "Jacob — a work in progress",
+    template: "%s — Jacob",
   },
   description:
     "A personal site about caring, curiosity, and helping where it matters.",
@@ -51,9 +50,6 @@ export default function RootLayout({ children }) {
         </div>
 
         <footer className="runner-footer">
-          <Link href="/why" className="runner-strapline">
-            Physical potential — see what this is! <span>↗</span>
-          </Link>
           <div className="runner-track" aria-hidden="true">
             {[...runners, ...runners].map((runner, index) => (
               <span style={{ "--runner": index }} key={index}>

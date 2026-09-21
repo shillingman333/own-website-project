@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import AboutContent from "./components/AboutContent";
 
 const FLASH_COLORS = [
   { bg: "#E8702A", color: "#FFFFFF" },
@@ -42,13 +43,12 @@ function FlashTile({ label, sublabel, className = "", style = {} }) {
 
 export default function Home() {
   return (
-    <main className="home-grid">
+    <>
+    <section className="page-shell home-about">
+      <AboutContent />
+    </section>
 
-      <Link href="/alias" className="tile home-catalyst">
-        <small>work alias</small>
-        <div className="alias-name">catalyst</div>
-        <div className="alias-sub">be the change →</div>
-      </Link>
+    <main className="home-grid">
 
       <a
         href={BLOG_URL}
@@ -109,11 +109,7 @@ export default function Home() {
         <strong>Weaknesses → positives</strong>
       </Link>
 
-      <Link href="/alias" className="tile home-alias-link">
-        <small>about</small>
-        <strong>Who is catalyst?</strong>
-      </Link>
-
     </main>
+    </>
   );
 }
