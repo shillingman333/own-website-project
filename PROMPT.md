@@ -6,6 +6,10 @@ _The original prompt used to build this site._
 
 ## Change log
 
+### 2026-09-21 — Who I am page intro
+
+**Request:** Start the Who I am page by saying this is a collection of thoughts and ideas I have regarding who I wish to be.
+
 ### 2026-09-21 — Flash colours on all bottom homepage tiles
 
 **Request:** Make all of the boxes at the bottom of the homepage change colour to orange, not just one.

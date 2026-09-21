@@ -9,6 +9,9 @@ export default function WhoIAmPage() {
       <p className="eyebrow">Who I am</p>
       <h1 className="display-title">The human part.</h1>
       <p className="lede">
+        This is a collection of thoughts and ideas I have regarding who I wish to be.
+      </p>
+      <p className="lede">
         I believe empathy unlocks potential. I care about connection — with people,
         animals, nature, and ordinary moments in a day. I try to live simply and
         gently, with patience for myself and others, even when I don&apos;t always manage it.
