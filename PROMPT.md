@@ -6,6 +6,14 @@ _The original prompt used to build this site._
 
 ## Change log
 
+### 2026-09-21 — Remove separate about page
+
+**Request:** Don't need the about as a separate page now that it lives on the homepage.
+
+**Changes:**
+- Removed `/alias` route; about content is homepage-only.
+- Nav "about" still links to `/#about` on the homepage.
+
 ### 2026-09-21 — About on homepage; remove footer strapline
 
 **Request:** Remove "Physical potential — see what this is!" from the bottom of each page. Put the about me section on the homepage.
@@ -58,15 +66,9 @@ The front page should express (and can include this text too!): Make this life a
 
 ---
 
-## About Me page
+## About me _(on homepage)_
 
-Make this a big-ish button and link this to the alias.
-
----
-
-## About page _(formerly alias page)_
-
-Introduce me as Jacob. _(Previously: alias page explaining "catalyst" — the name came from wanting to be the catalyst in terms of "be the change".)_
+Introduce me as Jacob at the top of the homepage. _(Previously: separate alias/about page.)_
 
 ### Who I am
 
