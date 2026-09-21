@@ -351,16 +351,6 @@ img, video, svg {
   color: var(--text);
 }
 
-.home-amazing .austrian {
-  font-size: 0.8rem;
-  background: var(--accent-soft);
-  color: var(--text);
-  border-radius: 8px;
-  padding: 0.4rem 0.65rem;
-  margin-top: 0.5rem;
-  display: inline-block;
-}
-
 .flash-tile {
   border-radius: var(--radius-tile);
   padding: 1.25rem 1.4rem;
@@ -940,11 +930,6 @@ img, video, svg {
 
   .tile strong {
     font-size: 1rem;
-  }
-
-  .home-amazing .austrian {
-    display: block;
-    width: 100%;
   }
 
   .site-header { padding: 0.65rem 0.9rem; }

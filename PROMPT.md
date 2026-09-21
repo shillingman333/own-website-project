@@ -6,6 +6,10 @@ _The original prompt used to build this site._
 
 ## Change log
 
+### 2026-09-21 — Remove Austrian school example
+
+**Request:** Remove the Austrian school of thought point from the homepage.
+
 ### 2026-09-21 — Direction wording
 
 **Request:** Change direction from quantity-only to: help as many people as possible, in as great a way for each person as possible, as simply as possible.
