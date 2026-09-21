@@ -1,5 +1,3 @@
-import PodcastPlayer from "../components/PodcastPlayer";
-
 export const metadata = {
   title: "Career",
   description: "Where I am in my career — experience, direction, and what I'm moving toward.",
@@ -15,8 +13,6 @@ export default function CareerPage() {
         and communicate clearly. What I want next is work that is people-centric, or
         that does good for the world.
       </p>
-
-      <PodcastPlayer />
 
       <section className="content-grid">
         <article className="card span-12 bg-dark">

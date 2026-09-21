@@ -6,6 +6,10 @@ _The original prompt used to build this site._
 
 ## Change log
 
+### 2026-09-21 — Remove career podcast
+
+**Request:** Remove the audio "a short why" bit from the career page.
+
 ### 2026-09-21 — Career page intro
 
 **Request:** Word the career page top as: several years in data and analytics consulting taught me how to build properly and communicate clearly; what I want next is work that is people-centric, or does good for the world.
