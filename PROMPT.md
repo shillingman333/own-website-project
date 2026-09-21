@@ -6,6 +6,13 @@ _The original prompt used to build this site._
 
 ## Change log
 
+### 2026-09-21 — Direction wording
+
+**Request:** Change direction from quantity-only to: help as many people as possible, in as great a way for each person as possible, as simply as possible.
+
+**Changes:**
+- Updated Career page direction headline and podcast closing line.
+
 ### 2026-09-21 — Site structure overhaul
 
 **Request:** Overhaul the structure to these pages: Homepage, Career, Who I am (Inspirations/Spirituality/reframes), Recommendations.
@@ -272,7 +279,7 @@ What's my purpose, what do I care about, why am I here?
 
 - A built-in short podcast, talking about what matters to me (family and friends, and what I want to achieve — helping people, working on interesting projects)
 - Championing listening and caring for animals and caring for our fellow humans and caring for the environment
-- My purpose: I just want to help as many people/as much as possible, in the simplest way, using the least effort possible
+- My purpose: help as many people as possible, in as great a way for each person as possible, as simply as possible (not just about the number)
 - I don't have a clear passion — I want to help those that need help, that I spot need help, and who reach out to me
 - Want to create harmony: Is it possible that we have divisive mindsets without realising, as a result of the divisive politics we experience?
 
