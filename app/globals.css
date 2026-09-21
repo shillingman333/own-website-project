@@ -378,16 +378,21 @@ img, video, svg {
   font-weight: 800;
 }
 
-/* Page link tiles — mostly white, accent sparingly */
+/* Page link tiles — flash colours including orange */
 .home-why, .home-inspiration, .home-reframes,
 .home-flash {
   grid-column: span 3;
-  background: var(--bg);
 }
 
-.home-why { border-left: 3px solid var(--accent); }
-.home-inspiration { border-left: 3px solid var(--accent); }
-.home-reframes { border-left: 3px solid var(--accent); }
+.flash-link-tile small {
+  opacity: 0.65;
+  color: inherit;
+}
+
+.flash-link-tile strong,
+.flash-link-tile p {
+  color: inherit;
+}
 
 .home-flash {
   border: 1px solid var(--border);

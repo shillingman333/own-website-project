@@ -10,10 +10,7 @@ const FLASH_COLORS = [
   { bg: "#0F2744", color: "#FFFFFF" },
 ];
 
-const BLOG_URL =
-  "https://medium.com/@jacobshilling/embracing-lifes-opportunities-a-journey-of-purpose-and-connection-ef1cf4233bc3";
-
-function FlashTile({ label, sublabel, className = "", style = {} }) {
+function useFlashScheme() {
   const [scheme, setScheme] = useState(FLASH_COLORS[0]);
 
   useEffect(() => {
@@ -29,16 +26,58 @@ function FlashTile({ label, sublabel, className = "", style = {} }) {
     return () => clearInterval(interval);
   }, []);
 
+  return scheme;
+}
+
+function FlashTile({ label, sublabel, className = "" }) {
+  const scheme = useFlashScheme();
+
   return (
     <div
       className={`flash-tile ${className}`.trim()}
-      style={{ background: scheme.bg, color: scheme.color, ...style }}
+      style={{ background: scheme.bg, color: scheme.color }}
     >
       {sublabel && <small style={{ color: scheme.color, opacity: 0.6 }}>{sublabel}</small>}
       {label && <strong>{label}</strong>}
     </div>
   );
 }
+
+function FlashLink({ href, className = "", external = false, children }) {
+  const scheme = useFlashScheme();
+  const style = {
+    background: scheme.bg,
+    color: scheme.color,
+    borderColor: scheme.bg,
+  };
+
+  if (external) {
+    return (
+      <a
+        href={href}
+        target="_blank"
+        rel="noreferrer"
+        className={`tile flash-link-tile ${className}`.trim()}
+        style={style}
+      >
+        {children}
+      </a>
+    );
+  }
+
+  return (
+    <Link
+      href={href}
+      className={`tile flash-link-tile ${className}`.trim()}
+      style={style}
+    >
+      {children}
+    </Link>
+  );
+}
+
+const BLOG_URL =
+  "https://medium.com/@jacobshilling/embracing-lifes-opportunities-a-journey-of-purpose-and-connection-ef1cf4233bc3";
 
 export default function Home() {
   return (
@@ -97,25 +136,20 @@ export default function Home() {
 
         <FlashTile sublabel="a reminder" label="You are enough." className="home-flash" />
 
-        <Link href="/recommendations" className="tile home-why">
+        <FlashLink href="/recommendations" className="home-why">
           <small>recommendations</small>
           <strong>Things I recommend you buy and use.</strong>
-        </Link>
+        </FlashLink>
 
-        <a
-          href={BLOG_URL}
-          target="_blank"
-          rel="noreferrer"
-          className="tile home-inspiration"
-        >
+        <FlashLink href={BLOG_URL} className="home-inspiration" external>
           <small>writing</small>
           <strong>Embracing Life&apos;s Opportunities</strong>
-        </a>
+        </FlashLink>
 
-        <Link href="/who-i-am#inspirations" className="tile home-reframes">
+        <FlashLink href="/who-i-am#inspirations" className="home-reframes">
           <small>inspirations</small>
           <strong>People, words &amp; ideas</strong>
-        </Link>
+        </FlashLink>
       </main>
     </>
   );

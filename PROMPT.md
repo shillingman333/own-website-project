@@ -6,6 +6,13 @@ _The original prompt used to build this site._
 
 ## Change log
 
+### 2026-09-21 — Flash colours on all bottom homepage tiles
+
+**Request:** Make all of the boxes at the bottom of the homepage change colour to orange, not just one.
+
+**Changes:**
+- Recommendations, writing, and inspirations tiles now flash colours (including orange) like the reminder tile.
+
 ### 2026-09-21 — Remove Austrian school example
 
 **Request:** Remove the Austrian school of thought point from the homepage.
