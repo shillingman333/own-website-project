@@ -44,12 +44,11 @@ function FlashTile({ label, sublabel, className = "", style = {} }) {
 export default function Home() {
   return (
     <>
-    <main className="home-grid">
+    <section id="about" className="page-shell home-about">
+      <AboutContent />
+    </section>
 
-      <a href="#about" className="tile home-name">
-        <div className="display-name">Jacob</div>
-        <div className="name-sub">about me ↓</div>
-      </a>
+    <main className="home-grid">
 
       <a
         href={BLOG_URL}
@@ -111,10 +110,6 @@ export default function Home() {
       </Link>
 
     </main>
-
-    <section id="about" className="page-shell home-about">
-      <AboutContent />
-    </section>
     </>
   );
 }
