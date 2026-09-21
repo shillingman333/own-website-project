@@ -6,6 +6,14 @@ _The original prompt used to build this site._
 
 ## Change log
 
+### 2026-09-21 — Site goal description
+
+**Request:** Add a description: the goal of the website is to share some things I find important to me, and where I am at, in terms of my career.
+
+**Changes:**
+- Added that goal as the opening description on the homepage about section.
+- Updated the site metadata description to match.
+
 ### 2026-09-21 — Remove about page and nav link
 
 **Request:** Don't need a separate about page; the homepage is the way to get the about info.
