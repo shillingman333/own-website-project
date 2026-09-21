@@ -6,6 +6,21 @@ _The original prompt used to build this site._
 
 ## Change log
 
+### 2026-09-21 — Repository tidy-up
+
+**Request:** Make sure the repository itself is tidy — sensible commits, readable code, README, no API keys/secrets, etc.
+
+**Changes:**
+- Rewrote README (pages, deploy workflow path, no-secrets note).
+- Removed unused Next.js template SVGs and dead podcast CSS.
+- Extracted homepage flash tiles into `FlashTiles.jsx`.
+- Documented `_archived/` as reference-only drafts.
+- Pointed `npm run lint` at ESLint (Next.js 16 no longer ships `next lint`).
+
+### 2026-09-21 — LinkedIn on Career page
+
+**Request:** Add a link to LinkedIn on the career page: https://www.linkedin.com/in/jacobshilling/
+
 ### 2026-09-21 — Remove career podcast
 
 **Request:** Remove the audio "a short why" bit from the career page.

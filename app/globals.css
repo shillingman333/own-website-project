@@ -481,6 +481,22 @@ img, video, svg {
   margin-top: -1.25rem;
 }
 
+.career-linkedin {
+  margin: -1.25rem 0 2.25rem;
+}
+
+.career-linkedin a {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.career-linkedin a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .content-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -622,49 +638,6 @@ img, video, svg {
   font-size: 1.1rem;
   color: var(--accent);
 }
-
-/* Podcast */
-.podcast {
-  display: flex;
-  gap: 1.4rem;
-  align-items: flex-start;
-  background: var(--bg-subtle);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-card);
-  padding: 1.5rem;
-  margin: 1.75rem 0;
-  color: var(--text);
-}
-
-.podcast-art { font-size: 2.2rem; flex-shrink: 0; }
-
-.podcast h2 {
-  font-size: 1.05rem;
-  font-weight: 800;
-  margin: 0.15rem 0;
-}
-
-.podcast p {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  line-height: 1.5;
-  margin-bottom: 0.7rem;
-}
-
-.podcast button {
-  background: var(--accent);
-  color: #fff;
-  border: none;
-  border-radius: 100px;
-  padding: 0.45rem 1.15rem;
-  font-size: 0.85rem;
-  font-weight: 700;
-  cursor: pointer;
-  font-family: var(--font-body);
-  transition: opacity 0.2s, transform 0.15s;
-}
-
-.podcast button:hover { opacity: 0.9; transform: scale(1.02); }
 
 /* Footer */
 /* Site end — Medium (separate from runner band) */
@@ -842,11 +815,6 @@ img, video, svg {
   .span-4        { grid-column: span 3; }
   .span-5, .span-6, .span-7, .span-8, .span-9, .span-12 { grid-column: span 6; }
   .page-shell    { padding: 2rem 1.1rem 2.5rem; }
-
-  .podcast {
-    flex-direction: column;
-    gap: 0.85rem;
-  }
 
   .rec-grid {
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
