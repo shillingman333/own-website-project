@@ -11,7 +11,8 @@ const episode =
   "contribution can look like listening, bringing some humour, or simply doing the " +
   "useful thing in front of you. My direction could be artificial intelligence, climate " +
   "change, global poverty, or animal welfare. The subject may change. The aim does not: " +
-  "help as much as possible, as simply as possible.";
+  "help as many people as possible, in as great a way for each person as possible, " +
+  "as simply as possible.";
 
 export default function PodcastPlayer() {
   const [playing, setPlaying] = useState(false);

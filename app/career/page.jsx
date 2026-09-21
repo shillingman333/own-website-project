@@ -21,7 +21,10 @@ export default function CareerPage() {
       <section className="content-grid">
         <article className="card span-12 bg-dark">
           <p className="kicker">Direction</p>
-          <h2>Help as many people as possible, as simply as possible.</h2>
+          <h2>
+            Help as many people as possible, in as great a way for each person as
+            possible, as simply as possible.
+          </h2>
         </article>
 
         <article className="card span-7 bg-soft">
