@@ -93,9 +93,6 @@ export default function Home() {
           <p>
             Use all the logical and psychological tools. Knowledge of how the brain works is an advantage.
           </p>
-          <p className="austrian">
-            Austrian school of thought: the cleaner in the restaurant is as important as the cook.
-          </p>
         </div>
 
         <FlashTile sublabel="a reminder" label="You are enough." className="home-flash" />
