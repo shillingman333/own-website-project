@@ -19,7 +19,7 @@ export const metadata = {
     template: "%s — Jacob",
   },
   description:
-    "A personal site about caring, curiosity, and helping where it matters.",
+    "Sharing things that matter to me, and where I am in my career.",
 };
 
 export const viewport = {

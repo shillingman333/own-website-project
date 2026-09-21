@@ -6,9 +6,12 @@ export default function AboutContent({ showHeader = true }) {
           <p className="eyebrow">About</p>
           <h2 className="display-title">Hi, I&apos;m Jacob.</h2>
           <p className="lede">
-            I&apos;m Jacob. I believe that one person, listening properly, can make a real
-            difference — the spark that helps things shift, not just the person who watches
-            and waits.
+            The goal of this website is to share some things I find important to me,
+            and where I am at in terms of my career.
+          </p>
+          <p className="lede">
+            I believe that one person, listening properly, can make a real difference —
+            the spark that helps things shift, not just the person who watches and waits.
           </p>
         </>
       )}

@@ -458,6 +458,10 @@ img, video, svg {
   margin-bottom: 2.25rem;
 }
 
+.lede + .lede {
+  margin-top: -1.25rem;
+}
+
 .content-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
