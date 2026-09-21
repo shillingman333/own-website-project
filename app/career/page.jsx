@@ -13,6 +13,15 @@ export default function CareerPage() {
         and communicate clearly. What I want next is work that is people-centric, or
         that does good for the world.
       </p>
+      <p className="career-linkedin">
+        <a
+          href="https://www.linkedin.com/in/jacobshilling/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          LinkedIn →
+        </a>
+      </p>
 
       <section className="content-grid">
         <article className="card span-12 bg-dark">
