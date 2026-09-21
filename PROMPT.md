@@ -6,6 +6,17 @@ _The original prompt used to build this site._
 
 ## Change log
 
+### 2026-09-21 — Site structure overhaul
+
+**Request:** Overhaul the structure to these pages: Homepage, Career, Who I am (Inspirations/Spirituality/reframes), Recommendations.
+
+**Changes:**
+- Nav is now: Career, Who I am, Recommendations (plus homepage via the Jacob wordmark).
+- New `/career` page for experience and direction.
+- New `/who-i-am` page combining inspirations, spirituality, and reframes.
+- Removed separate `/why`, `/inspirations`, `/spirituality`, and `/reframes` pages.
+- Homepage introduces the site goal and links into the three main sections.
+
 ### 2026-09-21 — Site goal description
 
 **Request:** Add a description: the goal of the website is to share some things I find important to me, and where I am at, in terms of my career.
