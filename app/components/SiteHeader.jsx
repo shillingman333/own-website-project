@@ -4,10 +4,8 @@ import Link from "next/link";
 import { useState } from "react";
 
 const navItems = [
-  ["why", "/why"],
-  ["inspirations", "/inspirations"],
-  ["reframes", "/reframes"],
-  ["spirituality", "/spirituality"],
+  ["career", "/career"],
+  ["who I am", "/who-i-am"],
   ["recommendations", "/recommendations"],
 ];
 

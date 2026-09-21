@@ -6,6 +6,47 @@ _The original prompt used to build this site._
 
 ## Change log
 
+### 2026-09-21 — Remove career podcast
+
+**Request:** Remove the audio "a short why" bit from the career page.
+
+### 2026-09-21 — Career page intro
+
+**Request:** Word the career page top as: several years in data and analytics consulting taught me how to build properly and communicate clearly; what I want next is work that is people-centric, or does good for the world.
+
+### 2026-09-21 — Who I am page intro
+
+**Request:** Start the Who I am page by saying this is a collection of thoughts and ideas I have regarding who I wish to be.
+
+### 2026-09-21 — Flash colours on all bottom homepage tiles
+
+**Request:** Make all of the boxes at the bottom of the homepage change colour to orange, not just one.
+
+**Changes:**
+- Recommendations, writing, and inspirations tiles now flash colours (including orange) like the reminder tile.
+
+### 2026-09-21 — Remove Austrian school example
+
+**Request:** Remove the Austrian school of thought point from the homepage.
+
+### 2026-09-21 — Direction wording
+
+**Request:** Change direction from quantity-only to: help as many people as possible, in as great a way for each person as possible, as simply as possible.
+
+**Changes:**
+- Updated Career page direction headline and podcast closing line.
+
+### 2026-09-21 — Site structure overhaul
+
+**Request:** Overhaul the structure to these pages: Homepage, Career, Who I am (Inspirations/Spirituality/reframes), Recommendations.
+
+**Changes:**
+- Nav is now: Career, Who I am, Recommendations (plus homepage via the Jacob wordmark).
+- New `/career` page for experience and direction.
+- New `/who-i-am` page combining inspirations, spirituality, and reframes.
+- Removed separate `/why`, `/inspirations`, `/spirituality`, and `/reframes` pages.
+- Homepage introduces the site goal and links into the three main sections.
+
 ### 2026-09-21 — Site goal description
 
 **Request:** Add a description: the goal of the website is to share some things I find important to me, and where I am at, in terms of my career.
@@ -261,7 +302,7 @@ What's my purpose, what do I care about, why am I here?
 
 - A built-in short podcast, talking about what matters to me (family and friends, and what I want to achieve — helping people, working on interesting projects)
 - Championing listening and caring for animals and caring for our fellow humans and caring for the environment
-- My purpose: I just want to help as many people/as much as possible, in the simplest way, using the least effort possible
+- My purpose: help as many people as possible, in as great a way for each person as possible, as simply as possible (not just about the number)
 - I don't have a clear passion — I want to help those that need help, that I spot need help, and who reach out to me
 - Want to create harmony: Is it possible that we have divisive mindsets without realising, as a result of the divisive politics we experience?
 

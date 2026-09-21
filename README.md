@@ -22,7 +22,7 @@ npm run build
 After a successful build you’ll have:
 
 - `out/index.html` — homepage (what GitHub Pages serves as the site root)
-- other routes under `out/why/`, `out/inspirations/`, etc.
+- other routes under `out/career/`, `out/who-i-am/`, `out/recommendations/`, etc.
 
 GitHub expects an `index.html` at the **root of what it publishes**. That is either:
 

@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import AboutContent from "./components/AboutContent";
 
 const FLASH_COLORS = [
   { bg: "#E8702A", color: "#FFFFFF" },
@@ -11,10 +10,7 @@ const FLASH_COLORS = [
   { bg: "#0F2744", color: "#FFFFFF" },
 ];
 
-const BLOG_URL =
-  "https://medium.com/@jacobshilling/embracing-lifes-opportunities-a-journey-of-purpose-and-connection-ef1cf4233bc3";
-
-function FlashTile({ label, sublabel, className = "", style = {} }) {
+function useFlashScheme() {
   const [scheme, setScheme] = useState(FLASH_COLORS[0]);
 
   useEffect(() => {
@@ -30,10 +26,16 @@ function FlashTile({ label, sublabel, className = "", style = {} }) {
     return () => clearInterval(interval);
   }, []);
 
+  return scheme;
+}
+
+function FlashTile({ label, sublabel, className = "" }) {
+  const scheme = useFlashScheme();
+
   return (
     <div
       className={`flash-tile ${className}`.trim()}
-      style={{ background: scheme.bg, color: scheme.color, ...style }}
+      style={{ background: scheme.bg, color: scheme.color }}
     >
       {sublabel && <small style={{ color: scheme.color, opacity: 0.6 }}>{sublabel}</small>}
       {label && <strong>{label}</strong>}
@@ -41,75 +43,114 @@ function FlashTile({ label, sublabel, className = "", style = {} }) {
   );
 }
 
+function FlashLink({ href, className = "", external = false, children }) {
+  const scheme = useFlashScheme();
+  const style = {
+    background: scheme.bg,
+    color: scheme.color,
+    borderColor: scheme.bg,
+  };
+
+  if (external) {
+    return (
+      <a
+        href={href}
+        target="_blank"
+        rel="noreferrer"
+        className={`tile flash-link-tile ${className}`.trim()}
+        style={style}
+      >
+        {children}
+      </a>
+    );
+  }
+
+  return (
+    <Link
+      href={href}
+      className={`tile flash-link-tile ${className}`.trim()}
+      style={style}
+    >
+      {children}
+    </Link>
+  );
+}
+
+const BLOG_URL =
+  "https://medium.com/@jacobshilling/embracing-lifes-opportunities-a-journey-of-purpose-and-connection-ef1cf4233bc3";
+
 export default function Home() {
   return (
     <>
-    <section className="page-shell home-about">
-      <AboutContent />
-    </section>
-
-    <main className="home-grid">
-
-      <a
-        href={BLOG_URL}
-        target="_blank"
-        rel="noreferrer"
-        className="tile home-blog"
-      >
-        <small>writing</small>
-        <strong>Embracing Life&apos;s Opportunities</strong>
-        <p>
-          I have what I need materially. That frees me to put energy into helping others,
-          into dreams of recovery, opportunity for the poorest, and peace within myself
-          and community — and into the small bits of work that still matter because the
-          world is large and we are small.
+      <section className="page-shell home-about">
+        <p className="eyebrow">Home</p>
+        <h1 className="display-title">Hi, I&apos;m Jacob.</h1>
+        <p className="lede">
+          The goal of this website is to share some things I find important to me,
+          and where I am at in terms of my career.
         </p>
-        <span className="home-blog-link">Read on Medium →</span>
-      </a>
-
-      <section className="tile mantra">
-        <p>
-          I fully and unconditionally accept all aspects of myself and who I am right now.
-          I acknowledge and accept my strengths and my weaknesses.
-          I accept that I am a <em>work in progress.</em>{" "}
-          And today, I am ready, open, and willing to learn and grow.
+        <p className="lede">
+          I believe that one person, listening properly, can make a real difference —
+          the spark that helps things shift, not just the person who watches and waits.
         </p>
       </section>
 
-      <Link href="/reframes#attention" className="tile anxiety-tile">
-        <span className="red-blob" aria-hidden="true" />
-        <small>the biggest anxiety maker — open it</small>
-      </Link>
+      <main className="home-grid">
+        <Link href="/career" className="tile home-name">
+          <small>career</small>
+          <div className="display-name">Where I am</div>
+          <div className="name-sub">experience &amp; direction →</div>
+        </Link>
 
-      <div className="tile home-amazing">
-        <small>the point</small>
-        <h2>Make this life amazing. It&apos;s not long.</h2>
-        <p>
-          Use all the logical and psychological tools. Knowledge of how the brain works is an advantage.
-        </p>
-        <p className="austrian">
-          Austrian school of thought: the cleaner in the restaurant is as important as the cook.
-        </p>
-      </div>
+        <Link href="/who-i-am" className="tile home-blog">
+          <small>who I am</small>
+          <strong>Inspirations, spirituality &amp; reframes</strong>
+          <p>
+            People and ideas that shape me, silence and presence, and the kinder
+            frames I try to bring to my own weaknesses.
+          </p>
+          <span className="home-blog-link">Open →</span>
+        </Link>
 
-      <FlashTile sublabel="a reminder" label="You are enough." className="home-flash" />
+        <section className="tile mantra">
+          <p>
+            I fully and unconditionally accept all aspects of myself and who I am right now.
+            I acknowledge and accept my strengths and my weaknesses.
+            I accept that I am a <em>work in progress.</em>{" "}
+            And today, I am ready, open, and willing to learn and grow.
+          </p>
+        </section>
 
-      <Link href="/why" className="tile home-why">
-        <small>why</small>
-        <strong>Help where help is needed.</strong>
-      </Link>
+        <Link href="/who-i-am#attention" className="tile anxiety-tile">
+          <span className="red-blob" aria-hidden="true" />
+          <small>the biggest anxiety maker — open it</small>
+        </Link>
 
-      <Link href="/inspirations" className="tile home-inspiration">
-        <small>inspirations</small>
-        <strong>People, words & ideas</strong>
-      </Link>
+        <div className="tile home-amazing">
+          <small>the point</small>
+          <h2>Make this life amazing. It&apos;s not long.</h2>
+          <p>
+            Use all the logical and psychological tools. Knowledge of how the brain works is an advantage.
+          </p>
+        </div>
 
-      <Link href="/reframes" className="tile home-reframes">
-        <small>reframes</small>
-        <strong>Weaknesses → positives</strong>
-      </Link>
+        <FlashTile sublabel="a reminder" label="You are enough." className="home-flash" />
 
-    </main>
+        <FlashLink href="/recommendations" className="home-why">
+          <small>recommendations</small>
+          <strong>Things I recommend you buy and use.</strong>
+        </FlashLink>
+
+        <FlashLink href={BLOG_URL} className="home-inspiration" external>
+          <small>writing</small>
+          <strong>Embracing Life&apos;s Opportunities</strong>
+        </FlashLink>
+
+        <FlashLink href="/who-i-am#inspirations" className="home-reframes">
+          <small>inspirations</small>
+          <strong>People, words &amp; ideas</strong>
+        </FlashLink>
+      </main>
     </>
   );
 }
